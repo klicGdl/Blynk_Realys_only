@@ -46,7 +46,7 @@ BLYNK_WRITE_DEFAULT() {
 
   switch (pin) {
     case V0:  // Save
-      int pinValue0 = param.asInt();
+      buttonState0 = param.asInt();
       break;
     case V1:
       buttonState1 = param.asInt();
